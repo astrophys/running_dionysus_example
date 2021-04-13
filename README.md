@@ -10,5 +10,13 @@ large datasets. I am creating this repo to generate Dionysus compatible. This is
 that contains the code for generating / converting samples to run in either
 [Dionysus](https://www.mrzv.org/software/dionysus/) or [GUDHI](http://gudhi.gforge.inria.fr/).
 
+For now this repo will focus on getting a variety of samples into the format of 
+[Dense Cubical Grids](http://people.maths.ox.ac.uk/nanda/perseus/index.html)
 
+
+
+
+### Contents
+This package contains 
+    1. 
 
