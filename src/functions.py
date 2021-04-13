@@ -13,7 +13,8 @@
 # References : 
 #   1. http://people.maths.ox.ac.uk/nanda/perseus/index.html
 #
-
+import time
+import numpy as np
 
 def read_matlab_int_file(InputPath = None):
     """
@@ -30,7 +31,6 @@ def read_matlab_int_file(InputPath = None):
 
     RETURN:
         dataM   :  unmodified raw data array from a matlab_int.txt file
-        dim     :  data dimensions
 
     DEBUG:
         1. a) Output scaled [0, 255] value density_array (not scaling by z-axis!)

@@ -18,12 +18,14 @@ import numpy as np
 import sys
 import re
 from error import exit_with_error
+from functions import read_matlab_int_file
 from datetime import datetime
 
 
 def print_help(ExitCode):
     """
     ARGS:
+        ExitCode : int, code to exit with
     RETURN:
     DESCRIPTION:
     DEBUG:
@@ -70,9 +72,8 @@ def main():
     # Error check
     if(re.search("matlab_int.txt$", inFile) == None):
         exit_with_error("ERROR!! {} is not a matlab_int.txt file\n".format(inFile))
-
-    
-    read_matlab_int_file(InputPath = None):
+    else:
+        dataM = read_matlab_int_file(InputPath = inFile)
     
     
 
