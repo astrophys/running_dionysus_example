@@ -20,6 +20,7 @@ import re
 from gaussian_kde import kernel_density_estimator
 from error import exit_with_error
 from functions import read_matlab_int_file
+from functions import output_array_as_matlab_int
 from datetime import datetime
 
 
@@ -37,16 +38,6 @@ def print_help(ExitCode):
                      "   \n")
     sys.exit(ExitCode)
 
-
-
-def tmp(ExitCode):
-    """
-    ARGS:
-    RETURN:
-    DESCRIPTION:
-    DEBUG:
-    FUTURE:
-    """
 
 
 def main():
@@ -116,7 +107,8 @@ def main():
             for i in range(dim[0]):
                 print("{} {} {} {:0.10f}".format(i+1,j+1,k+1,smoothM[i,j,k]))
 
-
+    smoothOutName = "smooth_{}".format(inFile.split("/")[-1])
+    output_array_as_matlab_int(Array=smoothM, OutName=smoothOutName)
     print("\n\nEnded : %s"%(time.strftime("%D:%H:%M:%S")))
     print("Run Time : {:.4f} h".format((time.time() - startTime)/3600.0))
     sys.exit(0)

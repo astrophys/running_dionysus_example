@@ -4,6 +4,9 @@
 # Mac stuff
 .DS_Store
 
+# output files
+smooth_*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
