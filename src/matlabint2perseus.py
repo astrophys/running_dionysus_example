@@ -105,7 +105,8 @@ def main():
     for k in range(dim[2]):
         for j in range(dim[1]):
             for i in range(dim[0]):
-                print("{} {} {} {:0.10f}".format(i+1,j+1,k+1,smoothM[i,j,k]))
+                #print("{} {} {} {:0.10f}".format(i+1,j+1,k+1,smoothM[i,j,k]))  # Use to compare w/ R
+                print("{} {} {} {:0.10f}".format(i,j,k,smoothM[i,j,k]))
 
     smoothOutName = "smooth_{}".format(inFile.split("/")[-1])
     output_array_as_matlab_int(Array=smoothM, OutName=smoothOutName)

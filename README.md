@@ -1,4 +1,4 @@
-# Running Dionysus Example
+# THIS REPO IS INCOMPLETE -  Running Dionysus Example
 #### Author : Ali Snedden
 #### Date   : 12-April-2021
 #### License: MIT
